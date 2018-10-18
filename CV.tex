@@ -1,0 +1,283 @@
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+\usepackage{comment}
+\usepackage[inline]{enumitem}
+
+\newcommand{\CVAuthor}{Kevin Zou}
+\newcommand{\CVTitle}{Kevin Zou's Resume}
+\newcommand{\CVNote}{Last Update \today}
+\newcommand{\CVWebpage}{}
+
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfkeywords={},
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+{6918 Rosemont Drive, McLean, Virginia 22101, USA}
+\par
+\href{mailto:kevinzou2150@gmail.com}{kevinzou2150@gmail.com}
+\,\SubBulletSymbol\,+1\,(703)\,362-6362
+\par
+\CVNote
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.umich.edu/}
+{\textbf{University of Michigan}},
+Ann Arbor, VA, USA
+\hfill
+\DatestampYMD{2018}{9}{} -- Present
+%\DatestampYMD{}{}{}
+\Gap
+\BulletItem
+Undergraduate Student
+\hfill
+Expected Graduation: May 2022
+\BulletItem
+Computer Science Major
+\Gap
+
+\Entry
+\href{https://tjhsst.fcps.edu/}
+{\textbf{Thomas Jefferson High School for Science and Technology (TJHSST)}},
+Alexandria, VA, USA
+
+\Gap
+\BulletItem
+Student - Cumulative GPA: 4.224
+\hfill
+\DatestampYMD{2014}{9}{} --
+\DatestampYMD{2018}{6}{9}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{http://cs.gmu.edu/~ashehu/}
+{\textbf{Computational Biology Research Mentorship}},
+George Mason University
+\hfill
+\DatestampYMD{2017}{06}{22} -- 
+\DatestampYMD{2018}{06}{04}
+
+\Gap
+\BulletItem
+Department: Computer Science
+\BulletItem
+Project:
+Memetic Evolutionary Algorithms for De-novo Protein Structure Prediction
+\BulletItem
+Mentor:
+Dr. Amarda Shehu
+\BulletItem
+Topics:
+Computational biology, genetic algorithms, de novo protein structure prediction, stochastic optimization
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+% START COMMENT
+\begin{comment}
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+
+\Gap
+\NumberedItem{[1]}
+{\underline{Kevin Zou} and Amarda Shehu,
+``Memetic Evolutionary Algorithms for De-novo Protein Structure Prediction,''
+\textit{ACM Bioinformatics and Computational Biology Conference, 2018}. In Preparation.}
+
+\endgroup
+\end{comment}
+% END COMMENT
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\Gap
+\BulletItem
+HackUVA Hackathon Winner, Domain.com Sponsored Award
+\hfill
+\DatestampYMD{2018}{03}{25}
+\begin{Detail}
+\Item
+Won the Domain.com sponsored award for a stock trading web app that automates trading using various metrics and user-configurable options.
+\end{Detail}
+
+\Gap
+\BulletItem
+National Merit Scholarship Semifinalist, NMSC
+\hfill
+\DatestampYMD{2017}{09}{11}
+\begin{Detail}
+\Item
+Achieved an index score of 225 on the 2016 PSAT, which qualified me as a semifinalist for the NMSC.
+\end{Detail}
+
+\Gap
+\BulletItem
+AP Scholar with Honors,
+CollegeBoard
+\hfill
+\DatestampY{2017}
+\begin{Detail}
+\Item
+Received an average score of 3.25 or more on all AP Exams taken, in addition to scores of 3 or higher on more than 4 AP exams.\end{Detail}
+
+\BulletItem
+PilotDC Hackathon "Most Innovative" Award
+\hfill
+\DatestampYM{2015}{08}
+\begin{Detail}
+\Item
+Awarded for an Image Recognition application that controlled a computer's mouse through eye movements.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Extracurricular ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\Entry
+{\textbf{Image Processing Intern}}, Kashmir World Foundation
+\hfill
+\DatestampY{2016} -- {2018}
+\Gap
+Programmed drones to autonomously track sea turtles for animal conservation. I organized image data sets, trained neural networks to recognize and classify turtle tracks, and worked on optimizing the image recognition to run locally on a custom-built drone.
+\Gap
+\Entry
+{\textbf{TJREVERB Cubesat Project}}, TJHSST
+\hfill
+\DatestampY{2016} -- \DatestampY{2018}
+\Gap
+Student-run project to send a satellite into orbit. I contributed code for our outreach website and the satellite's radio communications. Greenlit by NASA for a 2019 launch.
+\Gap
+\Entry
+{\textbf{Open-Source Game-related Development}}
+\hfill
+\DatestampY{2015} -- Present
+\Gap
+
+Writing short videogame scripts and reverse-engineering tools to modify and emulate games.
+
+Developed a custom command-line client for an MMO game, allowing users to chat and carry out simple tasks (trade, view friends, etc) without the need to open the full game client. Runs on all major operating systems and also Android phones.
+
+In Development: a spreadsheet based web database for the mobile game Doll's Frontline, providing stats and info on various characters within the game.
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+English: Native language.
+
+\Gap
+\BulletItem
+Chinese: Basic (speaking).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+{\textbf{Programming}}
+\Gap
+Proficiencies: Debugging, Profiling
+\Gap
+Advanced:
+\begin{enumerate*}[label=\SubBulletSymbol]
+\item C / C++
+\item Javascript
+\item Node.js
+\item Python 2 / 3
+\end{enumerate*}
+\Gap
+Intermediate:
+\begin{enumerate*}[label=\SubBulletSymbol]
+\item OpenCV
+\item Java
+\end{enumerate*}
+\Gap
+
+\Entry
+{\textbf{Office}}
+\Gap
+Advanced:
+\begin{enumerate*}[label=\SubBulletSymbol]
+\item Microsoft Word / Excel
+\item LaTeX Typesetting
+
+\end{enumerate*}
+
+\end{Body}
+
+\end{document}
