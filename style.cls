@@ -72,7 +72,7 @@
 
 % Geometry package for page margins.
 \RequirePackage[
-left=0.70in,
+left=0.50in,
 right=0.70in,
 top=0.60in,
 bottom=0.45in,
@@ -168,13 +168,13 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
-\newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
-\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
+\newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{11pt}{13pt}\selectfont}
+\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{11pt}{9.6pt}\selectfont}
 \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-\newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
-\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
-\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
-\newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+\newcommand{\UseSubTitleFont}{\normalfont\fontsize{11pt}{12pt}\selectfont}
+\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{11pt}{12pt}\selectfont\bfseries}
+\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{10pt}{10.3pt}\selectfont\bfseries}
+\newcommand{\UseDetailFont}{\normalfont\fontsize{10pt}{10.3pt}\selectfont}
 
 % Symbols (unicode).
 \newcommand{\BulletSymbol}{{\normalfont\fontsize{6.5}{7.8}\selectfont\raisebox{0.17em}{\char"25A0}}}
@@ -239,7 +239,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 \par\vspace{1.5\baselineskip}%
 \begin{list}
 {}
-{\setlength\leftmargin{1.2in}%
+{\setlength\leftmargin{1.0in}%
 \setlength\rightmargin{0in}%
 \setlength\labelwidth{1.2in}%
 \setlength\labelsep{0in}%
