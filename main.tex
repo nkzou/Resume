@@ -1,288 +1,119 @@
-\documentclass[letterpaper,MMMyyyy,nonstopmode]{style}
-\usepackage{comment}
-\usepackage[inline]{enumitem}
-\usepackage{multicol}
-\newcommand{\CVAuthor}{Kevin Zou}
-\newcommand{\CVTitle}{Kevin Zou's Resume}
-\newcommand{\CVNote}{Last Update \today}
-\newcommand{\CVWebpage}{}
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\hypersetup{
-pdftitle={\CVTitle},
-pdfauthor={\CVAuthor},
-pdfsubject={\CVWebpage},
-pdfcreator={XeLaTeX},
-pdfkeywords={},
-unicode=true,
-bookmarksopen=true,
-pdfstartview=FitH,
-pdfpagelayout=OneColumn,
-pdfpagemode=UseOutlines,
-hidelinks,
-breaklinks}
+\documentclass[11pt]{article}
 
-\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
-\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{style}
 
 \begin{document}
 
-%%%%%%%%%%%%%%%
-% TITLE BLOCK %
-%%%%%%%%%%%%%%%
-
-\Title{\CVAuthor}
-
-\begin{SubTitle}
-{6918 Rosemont Drive, McLean, VA 22101, USA}
-\par
-\href{mailto:kevinzou2150@gmail.com}{kevinzou2150@gmail.com}
-\,\SubBulletSymbol\,+1\,(703)\,362-6362
-\par
-Github: \underline{\href{https://github.com/nkzou}{https://github.com/nkzou}}
-\end{SubTitle}
-
-\begin{Body}
-
-%%%%%%%%%%%%%%%
-%% EDUCATION %%
-%%%%%%%%%%%%%%%
-
-\Section
-{Education}
-{Education}
-{PDF:Education}
-
-\Entry
-\href{https://www.umich.edu/}
-{\textbf{University of Michigan, Engineering}},
-Ann Arbor, MI, USA
-\hfill
-\DatestampYMD{2018}{9}{} -- Present
-%\DatestampYMD{}{}{}
-\Gap
-\BulletItem
-Undergraduate Computer Science Major
-\hfill
-Expected Graduation: May 2022
-\BulletItem
-Courses: Programming and Data Structures
-\Gap
-
-\Entry
-\href{https://tjhsst.fcps.edu/}
-{\textbf{Thomas Jefferson High School for Science and Technology (TJHSST)}},
-Alexandria, VA, USA
-
-\Gap
-\BulletItem
-Graduated with Advanced Studies Diploma, Cumulative GPA 4.224
-\hfill
-\DatestampYMD{2014}{9}{} --
-\DatestampYMD{2018}{6}{9}
-\BulletItem
-Courses: AP Comp Sci, Computer Vision, Parallel Computing, AI, Web Dev
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Kevin Zou} & Email : \href{mailto:kevinzou2150@gmail.com}{kevinzou2150@gmail.com}\\
+  \href{https://nkzou.github.io/}{https://nkzou.github.io/} & Mobile : 703-362-6362 \\
+\end{tabular*}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%% RESEARCH EXPERIENCE %%
-%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan, Ann Arbor}{Ann Arbor, MI}
+      {Bachelor of Science in Computer Science;  GPA: 3.39; Expected Graduation May 2022}{Sep. 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Discrete Math, Data Structures \& Algorithms, Computer Organization, Computer Security, Database Management Systems, Intro Artificial Intelligence, Game Design \& Development, Software Engineering, Intro Autonomous Robotics, Computer Vision}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Thomas Jefferson High School for Science and Technology (TJHSST)}{Alexandria, VA}
+      {Advanced Studies Diploma;  GPA: 4.224}{Sep. 2014 -- June 2018}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {AP Computer Science A, Computer Vision, Artificial Intelligence, Parallel Computing, Web Dev}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\Section
-{Research Experience}
-{Research Experience}
-{PDF:ResearchExperience}
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C/C++, C\#, HTML/CSS, Java, Javascript, Python, Go}
+     \hfill
+     \textbf{Proficiencies}{: Debugging, Profiling, Optimization}
+   }
+   \item{
+     \textbf{Technologies}{: Angular, Django, Node.js, OpenCV, Unity Engine}
+     \hfill
+     \textbf{Misc}{: AWS, CircleCI, TFS, Agile}
+   }
+ \resumeSubHeadingListEnd
 
-\Entry
-\href{http://cs.gmu.edu/~ashehu/}
-{\textbf{Computational Biology Research Mentorship}},
-George Mason University
-\hfill
-\DatestampYMD{2017}{06}{22} -- 
-\DatestampYMD{2018}{06}{04}
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
 
-\Gap
-\BulletItem
-Project:
-Memetic Evolutionary Algorithms for De-novo Protein Structure Prediction
-\BulletItem
-Mentor:
-Dr. Amarda Shehu, Computer Science Department
-\BulletItem
-Topics:
-Computational biology, genetic algorithms, de novo protein structure prediction, stochastic optimization
+    \resumeSubheading
+      {QuickenLoans}{Detroit, MI}
+      {Software Developer Intern}{June 2020 - August 2020}
+      \resumeItemListStart
+        \resumeItem{The Answer}
+          {Worked on an internal web app for quickly finding information relevant to business operations, ranging from financial policies to tech support. Contributed code and fixes for the Backend-for-Frontend (BFF) and Angular Frontend. Also contributed IaC code setting up AWS permissions for an unreleased product.}
+        \resumeItem{Utilized}{AWS ECS/Lambda, Terraform, Angular, HTML/CSS/JS, C\#, .NET Core, MongoDB}
+      \resumeItemListEnd
 
-%%%%%%%%%%%%%%%%%%
-%% PUBLICATIONS %%
-%%%%%%%%%%%%%%%%%%
-% START COMMENT
-\begin{comment}
-\Section
-{Publications}
-{Publications}
-{PDF:Publications}
+    \resumeSubheading
+      {Kashmir World Foundation}{Alexandria, VA}
+      {Image Processing Intern}{Sep. 2016 - June 2018}
+      \resumeItemListStart
+        \resumeItem{MiSHELL Drone Project}
+          {Programmed drones to autonomously track sea turtles for animal conservation. I organized image data sets, trained neural networks to recognize and classify turtle tracks, and worked on optimizing the image recognition to run locally on a custom-built drone.}
+         \resumeItem{Utilized}{Python, Dronekit, and Darknet Computer Vision Library. Trained using Google Cloud Platform}
+      \resumeItemListEnd
 
-\SubSection
-{Conferences}
-{Conferences}
-{PDF:Conferences}
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Computational Biology Research Mentorship}{Fairfax, VA}
+      {at George Mason University}{June 2017 - June 2018}
+      \resumeItemListStart
+        \resumeItem{Project}
+          {Memetic Evolutionary Algorithms for De-novo Protein Structure Prediction}
+        \resumeItem{Mentor}
+          {Dr. Amarda Shehu, Computer Science Department @ \href{https://cs.gmu.edu/~ashehu/}{https://cs.gmu.edu/$\sim$ashehu/}}
+        \resumeItem{Topics}{Computational biology, genetic algorithms, de novo protein structure prediction, stochastic optimization}
+      \resumeItemListEnd
 
-\begingroup
-\renewcommand{\MaxNumberedItem}{[8888]}
+  \resumeSubHeadingListEnd
 
-\Gap
-\NumberedItem{[1]}
-{\underline{Kevin Zou} and Amarda Shehu,
-``Memetic Evolutionary Algorithms for De-novo Protein Structure Prediction,''
-\textit{ACM Bioinformatics and Computational Biology Conference, 2018}. In Preparation.}
-
-\endgroup
-\end{comment}
-% END COMMENT
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% AWARDS & SCHOLARSHIPS %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\Section
-{Awards \&\newline
-Scholarships}
-{Awards \& Scholarships}
-{PDF:AwardsAndScholarships}
-
-\Gap
-\BulletItem
-HackGT CTF 3rd Place
-\hfill
-\DatestampYMD{2018}{10}{}
-\begin{Detail}
-\Item
-Placed 3rd out of 71 teams in the HackGT Hackathon's CTF competition for computer security.
-\end{Detail}
-
-
-\Gap
-\BulletItem
-HackUVA Hackathon Winner, Domain.com Sponsored Award
-\hfill
-\DatestampYMD{2018}{03}{25}
-\begin{Detail}
-\Item
-Won the Domain.com sponsored award for an automated stock and option trading web app.
-\end{Detail}
-
-\Gap
-\BulletItem
-AP Scholar with Honors,
-CollegeBoard
-\hfill
-\DatestampY{2018}
-\begin{Detail}
-\Item
-Obtained the highest score, 5, on 4 AP exams, with an average of 4.6 on all AP exams taken\end{Detail}
-
-\Gap
-\BulletItem
-National Merit Scholarship Semifinalist, NMSC
-\hfill
-\DatestampYMD{2017}{09}{11}
-\begin{Detail}
-\Item
-Achieved an index score of 225 on the 2016 PSAT, which qualified me as a semifinalist for the NMSC.
-\end{Detail}
-
-\BulletItem
-PilotDC Hackathon "Most Innovative" Award
-\hfill
-\DatestampYM{2015}{08}
-\begin{Detail}
-\Item
-Awarded for an Image Recognition application that controlled a computer's mouse through eye movements.
-\end{Detail}
-
-%%%%%%%%%%%%%%
-%% PROJECTS %%
-%%%%%%%%%%%%%%
-
-\Section
-{Projects}
-{Projects}
-{PDF:Projects}
-
-\Entry
-{\textbf{UM::Autonomy, Autonomous Boat Team}}, University of Michigan
-\hfill
-\DatestampY{2018} -- Present
-\Gap
-Programmed drivers for sensors and embedded systems on an autonomous boat, in addition to processing the data from the sensors for use in other systems within the boat. \textbf{Utilized:} Python and C++ with the ROS robotics library.
-\Gap
-\Entry
-{\textbf{Image Processing Intern}}, Kashmir World Foundation
-\hfill
-\DatestampY{2016} -- {2018}
-\Gap
-Programmed drones to autonomously track sea turtles for animal conservation. I organized image data sets, trained neural networks to recognize and classify turtle tracks, and worked on optimizing the image recognition to run locally on a custom-built drone. \textbf{Utilized:} Python and Dronekit with the Darknet computer vision library.
-\Gap
-\Entry
-{\textbf{TJREVERB Cubesat Project}}, TJHSST
-\hfill
-\DatestampY{2016} -- \DatestampY{2018}
-\Gap
-Student-run project to send a satellite into orbit. I contributed code for our outreach website and the satellite's radio communications. Greenlit by NASA for a 2019 launch. \textbf{Utilized:} HTML, Javascript, CSS, and Python.
-\Gap
-\Entry
-{\textbf{Open-Source Video Game-related Development}}, \underline{\href{https://github.com/nkzou}{https://github.com/nkzou}}
-\hfill
-\DatestampY{2015} -- Present
-\Gap
-
-Writing short videogame scripts and reverse-engineering tools to modify and emulate games.
-
-Developed a custom command-line client/emulator for an MMO game, allowing users to chat and carry out simple tasks (trade, view friends, etc) without the need to open the full game client.
-
-In Development: a spreadsheet based web database for the mobile game Doll's Frontline, providing stats and info on various characters within the game.
-
-%%%%%%%%%%%%%%%
-%% LANGUAGES %%
-%%%%%%%%%%%%%%%
-
-\Section
-{Languages}
-{Languages}
-{PDF:Languages}
-English: Native language; Chinese: Basic (speaking)
-
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
-
-\Section
-{Skills}
-{Skills}
-{PDF:Skills}
-
-\Entry
-{\textbf{Programming}}
-\Gap
-Proficiencies: Debugging, Profiling
-\Gap
-Advanced:
-C++ \SubBulletSymbol \space 
-Javascript \SubBulletSymbol \space 
-Node.js \SubBulletSymbol \space
-Python
-\Gap
-Intermediate:
-OpenCV \SubBulletSymbol \space
-Java
-%\Gap
-
-%\Entry
-%{\textbf{Office}}
-%\Gap
-%Advanced:
-%Microsoft Word / Excel \SubBulletSymbol \space
-%LaTeX Typesetting
-
-\end{Body}
-
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{UM::Autonomy, Autonomous Boat Team, University of Michigan}
+      {Programmed drivers for sensors and embedded systems on an autonomous boat, in addition to processing sensor data for use in other systems within the boat. \\ \textbf{Utilized:} Python and C++ with the ROS robotics library.}
+    \resumeSubItem
+      {Open-Source Game Development (\href{https://nkzou.github.io/}{https://nkzou.github.io/})}{}
+        \resumeItemListStart
+            \resumeItem{Games}{Created a few games, including Snowbound, a 2D physics platformer with teleportation mechanics themed around Christmas and Santa.  (C\#, Unity Engine)}
+            \resumeItem{Modding/Automation}{Writing short video game scripts and reverse-engineering tools to modify and emulate games. (AutoHotKey, Node.js)}
+            \resumeItem{Game Client Emulation}{Developed a custom command-line client/emulator for an MMO game, allowing users to chat and carry out simple tasks (trade, view friends, etc) without the need to open the full game client. (Node.js, blessed)}
+            \resumeItem{Informational Web App}{A spreadsheet based web database for the mobile game Doll’s Frontline, providing game stats and info. (HTML/CSS/JS, ag-Grid, i18n, Django)}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+ 
 \end{document}
